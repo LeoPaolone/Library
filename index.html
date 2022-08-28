@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="icon" href="images/Library.png">
+</head>
+<body class="container">
+  <main>
+    <nav>
+        <h1>Library</h1>
+        <ul>
+         <button class="switchDark active" id="switch">
+          <span><i class='bx bx-sun' ></i></span>
+          <span><i class='bx bx-moon' ></i></span>
+         </button>
+        </ul>
+    </nav>
+    <form onsubmit="return false">
+        <section class="grid">
+          <input id="name" type="text" placeholder="Book's Name" required>
+          <input id="author" type="text" placeholder="Author's Name" required>
+          <input type="number"
+           id="pages"
+           placeholder="# of Pages"
+           min="1"
+           required
+          />
+          <select  id="status">
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+          </select>
+          <input type="submit" value="submit"/>
+          <button type="button" class="secondary" value="Delete All"></button>
+        </section>
+    </form>
+
+    <section id="tables">
+        <figure>
+            <table role="grid">
+                <thead>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </figure>
+    </section>
+    <footer>
+        <a href="https://github.com/LeoPaolone" target="_blank"><img id="footer-logo" src="images/gitHubLogo.png" alt="" ></a>
+
+    </footer>
+  </main>
+</body>
+<script src="app.js"></script>
+
+</html>

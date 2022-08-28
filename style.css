@@ -1,0 +1,60 @@
+
+
+footer{
+  text-align: center;
+}
+
+#footer-logo{
+    width: 2em;
+    height: auto;
+    margin-left: 1em;
+}
+
+#footer-logo:hover{
+    transition-duration: 0.75s;
+    transform: rotate(720deg) scale(1.3);
+}
+
+.delete{
+    background-color: rgb(201, 60, 55);
+}
+
+.Read{
+    background-color: cyan;
+    text-align: end;
+}
+
+.Unread{
+    background-color: crimson;
+}
+
+@media screen and (max-width: 480px){
+    
+footer{
+    text-align: center;
+  }
+  
+  #footer-logo{
+      width: 2em;
+      height: auto;
+      margin-left: 1em;
+  }
+  
+  #footer-logo:hover{
+      transition-duration: 0.75s;
+      transform: rotate(720deg) scale(1.3);
+  }
+  
+  .delete{
+      background-color: rgb(201, 60, 55);
+  }
+  
+  .Read{
+      background-color: cyan;
+      text-align: end;
+  }
+  
+  .Unread{
+      background-color: crimson;
+  }
+}
